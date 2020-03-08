@@ -12,18 +12,19 @@
     <div class="container">
       </a>
       <h1>Postal Rate Calculator </h1>
-      <form>
-        <label for"weight">Weight: </label>
+      <form action="/calculate" method="POST">
+        <label for"weight" >Weight: </label>
         <font color="black"><input type="number" id="weight" name="weight"/></font>
         <label for="mailType">Choose type of mail:</label>
 
-        <font color="black"><select id="mailType">
-          <option value="default">choose option</option>
-          <option value="lettersStamped">Stamped Letters</option>
-          <option value="lettersMetered">Metered Letters</option>
-          <option value="largeEnvelopes">Large Envelopes (Flalts)</option>
-          <option value="first-classPackage">First-Class Package Service</option>
+        <font color="black"><select id="mailType" name="mailType">
+          <option value="default" name="default">choose option</option>
+          <option value="lettersStamped" name="stampedLetters">Stamped Letters</option>
+          <option value="lettersMetered" name="meterdLetters">Metered Letters</option>
+          <option value="largeEnvelopes" name="LargeEvelopes">Large Envelopes (Flalts)</option>
+          <option value="first-classPackage" name="firstClass">First-Class Package Service</option>
           </select></font>
+          <font color="black"> <input type="submit" value="Submit"/></font>
       </form>
 
 </body>
